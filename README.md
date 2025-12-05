@@ -29,11 +29,9 @@ composer install
 ## 📝 3. Criar o Arquivo .env
 ```bash
 cp .env.example .env
-Edite o .env e configure:
 ```
 
-Banco de dados (DB_DATABASE, DB_USERNAME, DB_PASSWORD)
-
+Edite o .env e configure:
 Configurações gerais da aplicação
 
 ## 🔑 4. Gerar a Chave da Aplicação
@@ -41,32 +39,26 @@ Configurações gerais da aplicação
 php artisan key:generate
 ```
 
-## 🧬 5. Rodar Migrations (e Seeders, se houver)
-Apenas migrations:
+## 🧬 5. Rodar Migrations
 
+Migrations:
 ```bash
 php artisan migrate
-Migrations + seeds:
-```
-
-```bash
-php artisan migrate --seed
 ```
 
 ## 📦 6. Instalar Dependências do Front-end
 ```bash
-Copiar código
 npm install
 ```
 
 ## 🎨 7. Compilar os Assets
-Ambiente de desenvolvimento:
 
+Ambiente de desenvolvimento:
 ```bash
 npm run dev
-Build de produção:
 ```
 
+Build de produção:
 ```bash
 npm run build
 ```
@@ -74,26 +66,25 @@ npm run build
 ## ▶️ 9. Rodar o Servidor Laravel
 ```bash
 php artisan serve
-Acesse:
 ```
 
+Acesse:
 ```cpp
 http://127.0.0.1:8000
 ```
 
 ## 🔧 Comandos Úteis
 Limpar cache:
-
 ```bash
 php artisan optimize:clear
-Criar link simbólico para o storage:
 ```
 
+Criar link simbólico para o storage:
 ```bash
 php artisan storage:link
-Atualizar dependências:
 ```
 
+Atualizar dependências:
 ```bash
 composer update
 npm update
