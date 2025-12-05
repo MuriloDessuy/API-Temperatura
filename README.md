@@ -10,9 +10,8 @@ Certifique-se de ter instalado:
 
 - PHP 8.2+
 - Composer
-- MySQL ou PostgreSQL
+- SQLite
 - Node.js 18+ e NPM
-- Extensões PHP necessárias (pdo, mbstring, openssl, tokenizer etc.)
 
 ---
 
